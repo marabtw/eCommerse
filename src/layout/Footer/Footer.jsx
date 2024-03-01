@@ -1,8 +1,10 @@
 import React from "react"
 import styles from "./Footer.module.scss"
-import CopyRight from "../../components/ui/heading/CopyRight"
+import Button from "../../components/ui/button/Button"
+import Input from "../../components/ui/field/Input"
 import FooterHeading from "../../components/ui/heading/FooterHeading"
 import Description from "../../components/ui/heading/Description"
+import CopyRight from "../../components/ui/heading/CopyRight"
 import {
   FacebookIcon,
   TwitterIcon,
@@ -21,7 +23,7 @@ function Footer() {
       </div>
       <div className={styles.footer__info}>
         <div>
-          <FooterHeading text={"ABOUT US"} />
+          <FooterHeading text={"about us"} uppercase={true}/>
           <Description
             text={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, "
@@ -30,10 +32,14 @@ function Footer() {
           />
         </div>
         <div>
-          <FooterHeading text={"Newsletter"} />
-        </div>
+          <FooterHeading text={"Newsletter"} uppercase={false}/>
+					<div className={styles.footer__}>
+						<Input placeholder="Enter Your Email"/>
+						<Button text="Subscribe" color="pink" uppercase={true} />
+					</div>
+        </div>	
         <div>
-          <FooterHeading text={"NEED HELP"} />
+          <FooterHeading text={"need help"} uppercase={true}/>
           <Description
             text={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, "
@@ -42,7 +48,7 @@ function Footer() {
           />
         </div>
         <div>
-          <FooterHeading text={"CONTACT US"} />
+          <FooterHeading text={"contact us"} uppercase={true}/>
         </div>
       </div>
       <CopyRight />

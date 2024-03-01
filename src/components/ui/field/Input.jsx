@@ -1,9 +1,9 @@
-import styles from "../../../assets/styles/Button.module.scss"
+import styles from "../../../assets/styles/Field.module.scss"
 import React from 'react'
 
-const Input = () => {
+const Input = ({placeholder = "", }) => {
 	return (
-		<input />
+		<input className={styles.input} placeholder={placeholder}/>
 	)
 }
 

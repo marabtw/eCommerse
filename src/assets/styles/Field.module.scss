@@ -1,0 +1,10 @@
+@import "./variables";
+
+.input{
+	width: 100%;
+	outline: none;
+	padding: $inputPaddingY $inputPaddingX;
+	border: 1px solid $inputBorderColor;
+	color: $inputTextColor;
+	border-radius: $inputBorderRadius;
+}
