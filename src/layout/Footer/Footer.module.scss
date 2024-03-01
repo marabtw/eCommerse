@@ -1,5 +1,8 @@
 @import "../../assets/styles/variables";
 
-footer{
-	background-color: $footer-bg;
+footer {
+  background-color: $footer-bg;
+  .footer__icon {
+    color: $footer-text;
+  }
 }

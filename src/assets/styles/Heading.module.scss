@@ -3,10 +3,16 @@
 .paragraph {
 	color: $text;
 }
+
+.footer__subHeading{
+	text-transform: uppercase;
+	color: $footer-text;
+	font-weight: 600;
+}
 .footer__paragraph {
 	color: $footer-text;
 }
 
 .copyrigth{
-
+	color: $footer-text;
 }
