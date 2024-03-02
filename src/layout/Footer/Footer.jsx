@@ -34,6 +34,7 @@ function Footer() {
             descriptionClassName={"footer__paragraph"}
           />
         </div>
+				
         <div className={styles.footer__item}>
           <FooterHeading text={"Newsletter"} uppercase={false} />
           <div className={styles.footer__send}>
