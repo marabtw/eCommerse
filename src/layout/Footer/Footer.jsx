@@ -10,6 +10,9 @@ import {
   TwitterIcon,
   InstagramIcon,
   YoutubeIcon,
+  LocationIcon,
+  CallIcon,
+  MainIcon,
 } from "../../components/ui/icons/icons"
 
 function Footer() {
@@ -21,9 +24,9 @@ function Footer() {
         <InstagramIcon className={styles.footer__icon} />
         <YoutubeIcon className={styles.footer__icon} />
       </div>
-      <div className={styles.footer__info}>
-        <div>
-          <FooterHeading text={"about us"} uppercase={true}/>
+      <div className={styles.footer__items}>
+        <div className={styles.footer__item}>
+          <FooterHeading text={"about us"} uppercase={true} />
           <Description
             text={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, "
@@ -31,15 +34,15 @@ function Footer() {
             descriptionClassName={"footer__paragraph"}
           />
         </div>
-        <div>
-          <FooterHeading text={"Newsletter"} uppercase={false}/>
-					<div className={styles.footer__}>
-						<Input placeholder="Enter Your Email"/>
-						<Button text="Subscribe" color="pink" uppercase={true} />
-					</div>
-        </div>	
-        <div>
-          <FooterHeading text={"need help"} uppercase={true}/>
+        <div className={styles.footer__item}>
+          <FooterHeading text={"Newsletter"} uppercase={false} />
+          <div className={styles.footer__send}>
+            <Input placeholder="Enter Your Email" />
+            <Button text="Subscribe" color="pink" uppercase={true} />
+          </div>
+        </div>
+        <div className={styles.footer__item}>
+          <FooterHeading text={"need help"} uppercase={true} />
           <Description
             text={
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, "
@@ -47,8 +50,22 @@ function Footer() {
             descriptionClassName={"footer__paragraph"}
           />
         </div>
-        <div>
-          <FooterHeading text={"contact us"} uppercase={true}/>
+        <div className={styles.footer__item}>
+          <FooterHeading text={"contact us"} uppercase={true} />
+          <div className={styles.footer__infos}>
+            <div className={styles.footer__info}>
+              <LocationIcon />
+              <p>Gb road 123 london Uk</p>
+            </div>
+            <div className={styles.footer__info}>
+              <CallIcon />
+              <p>+01 12345678901</p>
+            </div>
+            <div className={styles.footer__info}>
+              <MainIcon />
+              <p>demo@gmail.com</p>
+            </div>
+          </div>
         </div>
       </div>
       <CopyRight />

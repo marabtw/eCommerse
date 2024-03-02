@@ -2,7 +2,55 @@
 
 footer {
   background-color: $footer-bg;
-  .footer__icon {
-    color: $footer-text;
-  }
+	padding: 0 $footerPaddingX;
+
+	.footer__icons{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: $footerIconsGap;
+		font-size: 1.3rem;
+		padding: $footerIconsPaddingY 0;
+		.footer__icon {
+			color: $footerAccentColor;
+		}
+	}
+
+	.footer__items{
+		display: flex;
+		gap: $footerItemsGap;
+		margin-bottom: $footerItemsMarginBottom;
+
+		.footer__item{
+			display: flex;
+			flex-direction: column;
+			gap: $footerItemGap;
+			max-width: 25%;
+			min-width: 24%;
+
+			.footer__send{
+				& > :first-child{
+					margin-bottom: $footerInfosGap;
+				}
+			}
+
+			.footer__infos{
+				display: flex;
+				flex-direction: column;
+				gap: $footerInfosGap;
+				color: $footerTextColor;
+
+				.footer__info{
+					display: flex;
+					gap: $footerInfoGap;
+					& > :first-child{
+						color: $footerAccentColor;
+					}
+				}
+			}
+		}
+	}
+
+	
+
 }

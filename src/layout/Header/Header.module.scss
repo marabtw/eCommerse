@@ -1,0 +1,70 @@
+@import "../../assets/styles/variables";
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__title{
+	text-align: center;
+	margin: $headerHeadingMarginY 0;
+	font-weight: 700;
+	font-size: 1.8rem;
+	line-height: 1.8rem;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $headerVerticalGap;
+  background: $headerNavBg;
+  padding: $headerPaddingY 0;
+	border-radius: $headerNavBorderRadius;
+	border: 1px solid $headerNavBorderColor;
+	box-shadow: 0px 0px 4px -3px #000000;
+
+  .header__item {
+		padding: $headerItemPaddingY $headerItemPaddingX;
+    text-transform: uppercase;
+    border-radius: $headerItemBorderRadius;
+		cursor: pointer;
+
+		& > * {
+			cursor: pointer;
+		}
+
+		&:has(.header__login) {
+			display: flex;
+			gap: $headerVerticalGap;
+			text-transform: none;
+			cursor: default;
+		}
+		
+    &.active {
+      background-color: $headerItemBg;
+    }
+
+		.header__login{
+			display: flex;
+			gap: calc($headerVerticalGap / 2);
+			
+		}
+  }
+}
+
+.header__nav.main {
+  background-color: $heaerNavBg_main;
+	box-shadow: none;
+	border: none;
+	border-top-left-radius: $headerNavBorderRadiusTop;
+	border-top-right-radius: $headerNavBorderRadiusTop;
+	border-bottom-left-radius: $headerNavBorderRadiusBottom;
+	border-bottom-right-radius: $headerNavBorderRadiusBottom;
+
+  .header__item {
+    &.active {
+      background-color: $headerItemBg_main;
+    }
+  }
+}

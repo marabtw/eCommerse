@@ -1,0 +1,6 @@
+@import "../assets/styles/variables";
+
+.layout{
+	padding: $layoutPaddingTop $layoutPaddingX;
+	padding-bottom: $layoutPaddingBottom;
+}

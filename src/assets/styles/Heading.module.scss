@@ -5,14 +5,19 @@
 }
 
 .footer__subHeading {
-  color: $footer-text;
+  color: $footerAccentColor;
   font-weight: 600;
 }
 
 .footer__paragraph {
-  color: $footer-text;
+  color: $footerTextColor;
 }
 
 .copyrigth {
-  color: $footer-text;
+	max-width: 70%;
+	margin: 0 auto;
+	padding: $copyrightPaddingY 0;
+  color: $footerTextColor;
+	border-top: 1px solid $footerTextColor;
+	text-align: center;
 }
