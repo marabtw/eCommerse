@@ -6,6 +6,28 @@ $layoutPaddingX: 40px;
 //main
 $text: #fefefe;
 
+//header
+$headerPaddingY: 10px;
+$headerVerticalGap: 15px;
+//header heading
+$headerHeadingMarginY: 20px;
+//header nav
+$headerNavBg: #fff;
+$heaerNavBg_main: #f9ece6;
+$headerNavBorderColor: #e5e5e5;
+$headerNavBorderRadius: 8px;
+$headerNavBorderRadiusTop: 15px;
+$headerNavBorderRadiusBottom: 0px;
+//header item
+$headerItemBg: #f4f5f6;
+$headerItemBg_main: #fff;
+$headerItemBorderRadius: 4px;
+$headerItemPaddingX: 20px;
+$headerItemPaddingY: 5px;
+
+//app
+$appSliderBorderRadiusBottom: 15px;
+
 //footer
 $footer-bg: #2d2d2d;
 $footerTextColor: #cbc9c9;
@@ -26,25 +48,6 @@ $footerInfoGap: 15px;
 
 //copyright
 $copyrightPaddingY: 20px;
-
-//header
-$headerPaddingY: 10px;
-$headerVerticalGap: 15px;
-//header heading
-$headerHeadingMarginY: 20px;
-//header nav
-$headerNavBg: #fff;
-$heaerNavBg_main: #f9ece6;
-$headerNavBorderColor: #e5e5e5;
-$headerNavBorderRadius: 8px;
-$headerNavBorderRadiusTop: 15px;
-$headerNavBorderRadiusBottom: 0px;
-//header item
-$headerItemBg: #f4f5f6;
-$headerItemBg_main: #fff;
-$headerItemBorderRadius: 4px;
-$headerItemPaddingX: 20px;
-$headerItemPaddingY: 5px;
 
 //buttons 
 $buttonBorderRadius: 4px;
