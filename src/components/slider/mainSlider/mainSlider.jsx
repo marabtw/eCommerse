@@ -4,6 +4,7 @@ import Button from "../../ui/button/Button"
 import SlideHeading from "../../ui/heading/SlideHeading"
 import Description from "../../ui/heading/Description"
 import sliderImg from "../../../assets/images/slider-img.png"
+import { LeftDirectionIcon, RightDirectionIcon } from "../../ui/icons/icons"
 
 const MainSlider = () => {
   return (
@@ -18,11 +19,6 @@ const MainSlider = () => {
                   "Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis. "
                 }
               />
-              <Description
-                text={
-                  "Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis. "
-                }
-              />
               <Button text="contact us" color="red" uppercase={true} />
             </div>
           </div>
@@ -31,8 +27,12 @@ const MainSlider = () => {
             <img src={sliderImg} />
           </div>
         </div>
-				<div className={styles.slider__controlTool}>
+				<div className={styles.slider__controllTool}>
+						<LeftDirectionIcon/>
+						<div className={styles.controllTool__items}>
 
+						</div>
+						<RightDirectionIcon/>
 				</div>
       </div>
     </div>
