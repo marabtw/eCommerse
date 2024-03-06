@@ -1,39 +1,33 @@
-import React from "react"
+import React, { useState } from "react"
 import styles from "./MainSlider.module.scss"
-import Button from "../../ui/button/Button"
-import SlideHeading from "../../ui/heading/SlideHeading"
-import Description from "../../ui/heading/Description"
-import sliderImg from "../../../assets/images/slider-img.png"
+import Slide1 from "../slides/slide1/Slide"
+import { DotIcon } from "../../ui/icons/icons"
+
 import { LeftDirectionIcon, RightDirectionIcon } from "../../ui/icons/icons"
 
 const MainSlider = () => {
+  const [slideAmound, setSlideAmound] = useState(10)
+
+  const slideNumbers = Array.from(
+    { length: slideAmound },
+    (_, index) => index + 1
+  )
+
   return (
     <div className={styles.slider}>
       <div className={styles.slider__container}>
-        <div className={`${styles.slider__slide} ${styles.slide_1}`}>
-          <div className={styles.slide__column}>
-            <div className={styles.slide__columnItem}>
-              <SlideHeading text={"Welcome To Our Gift Shop "}/>
-              <Description
-                text={
-                  "Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis. "
-                }
-              />
-              <Button text="contact us" color="red" uppercase={true} />
-            </div>
+        {slideNumbers.map((slideNumber) => (
+          <Slide1 key={slideNumber} />
+        ))}
+        <div className={styles.slider__controllTool}>
+          <LeftDirectionIcon className={styles.slider__controllTool_left}/>
+          <div className={styles.controllTool__items}>
+            {slideNumbers.map((slideNumber, index) => (
+              <DotIcon key={index} />
+            ))}
           </div>
-
-          <div className={styles.slide__column}>
-            <img src={sliderImg} />
-          </div>
+          <RightDirectionIcon className={styles.slider__controllTool_rigth}/>
         </div>
-				<div className={styles.slider__controllTool}>
-						<LeftDirectionIcon/>
-						<div className={styles.controllTool__items}>
-
-						</div>
-						<RightDirectionIcon/>
-				</div>
       </div>
     </div>
   )

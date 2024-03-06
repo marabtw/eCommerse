@@ -15,6 +15,7 @@
   cursor: pointer;
   border-radius: $buttonBorderRadius;
   padding: $buttonPaddingY $buttonPaddingX;
+	max-width: max-content;
   &:hover {
     background: transparent;
   }

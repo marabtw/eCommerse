@@ -13,6 +13,7 @@ import { FaLocationDot } from "react-icons/fa6"
 import { IoCall } from "react-icons/io5"
 import { MdEmail } from "react-icons/md"
 import { IoMdCart } from "react-icons/io"
+import { GoDotFill } from "react-icons/go";
 
 export {
   FaFacebookF as FacebookIcon,
@@ -28,4 +29,5 @@ export {
   FaSearch as SearchIcon,
 	FaUser as UserIcon,
 	FaQuoteLeft as QuoteLeftIcon,
+	GoDotFill as DotIcon,
 }
