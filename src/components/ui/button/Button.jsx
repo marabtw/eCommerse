@@ -7,7 +7,6 @@ const Button = ({
   uppercase = false,
   tabIndexStatus,
 }) => {
-	console.log(tabIndexStatus)
   return (
     <button
       className={`${styles.button} ${styles[`button_${color}`]} ${
