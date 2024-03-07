@@ -6,7 +6,9 @@
   height: 100%;
   display: flex;
   padding: 0 100px;
-	min-width: 100%;
+	// min-width: 100%;
+	flex-shrink: 0;
+	flex-grow: 0;
 
   .slide__column {
     display: flex;

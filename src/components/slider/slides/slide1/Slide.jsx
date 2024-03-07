@@ -5,7 +5,7 @@ import Button from "../../../ui/button/Button"
 import Description from "../../../ui/heading/Description"
 import sliderImg from "../../../../assets/images/slider-img.png"
 
-const Slide1 = () => {
+const Slide = ({tabIndexStatus}) => {
   return (
     <div className={`${styles.slide}`}>
       <div className={`${styles.slide__column}`}>
@@ -16,7 +16,7 @@ const Slide1 = () => {
               "Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis."
             }
           />
-          <Button text="contact us" color="red" uppercase={true} />
+          <Button text="contact us" color="red" uppercase={true} tabIndexStatus={tabIndexStatus}/>
         </div>
       </div>
 
@@ -27,4 +27,4 @@ const Slide1 = () => {
   )
 }
 
-export default Slide1
+export default Slide
