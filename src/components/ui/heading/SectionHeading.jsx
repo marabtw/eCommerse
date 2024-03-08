@@ -1,7 +1,7 @@
 import React from "react"
 
-function SectionHeading({ text }) {
-  return <h2>{text}</h2>
+function SectionHeading({ text,uppercase }) {
+  return <h2 className={`${uppercase && "uppercase"}`}>{text}</h2>
 }
 
 export default SectionHeading

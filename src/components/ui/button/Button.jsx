@@ -6,6 +6,7 @@ const Button = ({
   color = "default",
   uppercase = false,
   tabIndexStatus,
+  onClick,
 }) => {
   return (
     <button
@@ -13,6 +14,7 @@ const Button = ({
         uppercase && "uppercase"
       }`}
       tabIndex={tabIndexStatus && tabIndexStatus}
+      onClick={onClick && onClick}
     >
       {text}
     </button>

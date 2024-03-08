@@ -20,6 +20,7 @@
     background: transparent;
   }
 }
+
 .button_default {
   @include buttonColors(white, black);
 }
@@ -34,4 +35,7 @@
 }
 .button_violet {
   @include buttonColors(#9242dd, white);
+}
+.button_green {
+  @include buttonColors(#198d02, white);
 }

@@ -1,9 +1,11 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+
 import styles from "./Layout.module.scss"
-import Footer from "./footer/Footer"
 import Header from "./header/Header"
+import Footer from "./footer/Footer"
 import App from "../pages/app/App"
 import ShopPage from "../pages/shop/ShopPage"
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import WhyUs from "../pages/why-us/WhyUs"
 
 function Layout() {
   return (
@@ -13,8 +15,8 @@ function Layout() {
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/shop" element={<ShopPage />} />
-          <Route path="/why-us" element={<ShopPage />} />
-          <Route path="/contact-us" element={<ShopPage />} />
+          <Route path="/why-us" element={<WhyUs />} />
+          <Route path="/contact-us" element={<WhyUs />} />
         </Routes>
         <Footer />
       </Router>

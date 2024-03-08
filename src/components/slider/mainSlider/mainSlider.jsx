@@ -58,7 +58,7 @@ const MainSlider = () => {
           {slideNumbers.map((slideNumber, index) => (
             <Slide
               key={slideNumber}
-              tabIndexStatus={currentSlideIndex !== index && -1}
+              tabIndexStatus={currentSlideIndex !== index ? -1 : undefined}
             />
           ))}
         </div>
