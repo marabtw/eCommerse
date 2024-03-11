@@ -10,11 +10,12 @@ const Button = ({
 }) => {
   return (
     <button
+      type="button"
       className={`${styles.button} ${styles[`button_${color}`]} ${
         uppercase && "uppercase"
       }`}
       tabIndex={tabIndexStatus && tabIndexStatus}
-      onClick={onClick && onClick}
+      onClick={onClick}
     >
       {text}
     </button>

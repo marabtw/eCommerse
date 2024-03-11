@@ -3,6 +3,7 @@ import {
   FaTwitter,
   FaInstagram,
   FaYoutube,
+  FaGooglePlusG,
   FaAngleLeft,
   FaAngleRight,
   FaSearch,
@@ -14,12 +15,14 @@ import { IoCall } from "react-icons/io5"
 import { MdEmail } from "react-icons/md"
 import { IoMdCart } from "react-icons/io"
 import { GoDotFill, GoDot } from "react-icons/go"
+import { BiShow, BiHide } from "react-icons/bi"
 
 export {
   FaFacebookF as FacebookIcon,
   FaTwitter as TwitterIcon,
   FaInstagram as InstagramIcon,
   FaYoutube as YoutubeIcon,
+  FaGooglePlusG as GooglePlusIcon,
   FaAngleLeft as LeftDirectionIcon,
   FaAngleRight as RightDirectionIcon,
   FaLocationDot as LocationIcon,
@@ -31,4 +34,6 @@ export {
   FaQuoteLeft as QuoteLeftIcon,
   GoDotFill as DotIcon,
   GoDot as SelectedDotIcon,
+	BiShow as ShowIcon,
+	BiHide as HIdeIcon,
 }

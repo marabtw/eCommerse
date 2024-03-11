@@ -1,10 +1,10 @@
-import React from "react"
+import React, { useState } from "react"
 import styles from "./Header.module.scss"
 import { UserIcon, CartIcon, SearchIcon } from "../../components/ui/icons/icons"
-import Heading from "../../components/ui/heading/Heading"
 import { Link, useLocation } from "react-router-dom"
 
 const Header = () => {
+  const [authed, setAuthed] = useState(false)
   const location = useLocation()
 
   return (
@@ -45,8 +45,14 @@ const Header = () => {
         </li>
         <li className={styles.header__item}>
           <div className={styles.header__login}>
-            <UserIcon className={styles.header__icon} />
-            <span>Login</span>
+            {!authed ? (
+              <Link to="/login">
+                <UserIcon className={styles.header__icon} />
+                <span>Login</span>
+              </Link>
+            ) : (
+              <div></div>
+            )}
           </div>
           <CartIcon className={styles.header__icon} />
           <SearchIcon className={styles.header__icon} />
