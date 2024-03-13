@@ -1,0 +1,9 @@
+@import "../scss/variables";
+
+.layout{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: $layoutPaddingTop $layoutPaddingX;
+	padding-bottom: $layoutPaddingBottom;
+}

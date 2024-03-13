@@ -1,16 +1,16 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
-import "./assets/styles/globals.scss"
-import Layout from "./layout/Layout"
-import reportWebVitals from "./utils/reportWebVitals"
-import { BrowserRouter as Router } from "react-router-dom"
+import { BrowserRouter } from "react-router-dom"
+import reportWebVitals from "./reportWebVitals"
+import "./app/scss/global.scss"
+import Layout from "./app/layouts/Layout"
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
   <React.StrictMode>
-    <Router>
+    <BrowserRouter>
       <Layout />
-    </Router>
+    </BrowserRouter>
   </React.StrictMode>
 )
 

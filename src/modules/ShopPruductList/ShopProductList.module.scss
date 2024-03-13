@@ -1,0 +1,15 @@
+@import "../../app/scss/variables";
+
+.products {
+  .products__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .products__button_show {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}

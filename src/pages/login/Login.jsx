@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import styles from "./Login.module.scss"
 import {
   GooglePlusIcon,
@@ -6,16 +6,12 @@ import {
   TwitterIcon,
   ShowIcon,
   HIdeIcon,
-} from "../../components/ui/icons/icons"
-import Button from "../../components/ui/button/Button"
+} from "../../ui/icons/icons"
+import Button from "../../ui/Button/Button"
 
 const Login = () => {
   const [passwordShow, setPasswordShow] = useState(false)
 	const [activeStatus, setActiveStatus] = useState(false)
-
-	useEffect(() => {
-		console.log(activeStatus)
-	},[activeStatus])
 
 	const toggleActive = (value) =>{
 		setActiveStatus(value)
