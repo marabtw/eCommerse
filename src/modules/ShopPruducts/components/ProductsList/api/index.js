@@ -1,6 +1,6 @@
-import myAxios from "../../../../../api/axios"
+import shopAxios from "../../../../../lib/axios/axiosShop"
 
 export const getProducts = async () => {
-	const response = await myAxios.get("/products")
+	const response = await shopAxios.get("/products")
 	return response
 }

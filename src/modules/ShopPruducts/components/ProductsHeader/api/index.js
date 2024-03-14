@@ -1,1 +1,1 @@
-import myAxios from "../../../../../api/axios";
+import shopAxios from "../../../../../lib/axios/axiosShop"

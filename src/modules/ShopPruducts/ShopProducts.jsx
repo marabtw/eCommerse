@@ -1,7 +1,7 @@
 import styles from "./ShopProducts.module.scss"
 import SectionHeading from "../../ui/heading/SectionHeading"
 import ProductsList from "./components/ProductsList/ProductsList"
-import ProductsFilter from "./components/ProductsFilter/ProductsFilter"
+import ProductsFilters from "./components/ProductsFilters/ProductsFilters"
 import ProductsHeader from "./components/ProductsHeader/ProductsHeader"
 
 const ShopProducts = () => {
@@ -10,7 +10,7 @@ const ShopProducts = () => {
       <SectionHeading text={"latest products"} uppercase={true} />
       <ProductsHeader />
       <div className={styles.shopProducts__section}>
-        <ProductsFilter />
+        <ProductsFilters />
         <ProductsList />
       </div>
     </div>

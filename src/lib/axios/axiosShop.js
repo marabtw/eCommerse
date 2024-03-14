@@ -1,7 +1,7 @@
 import axios from "axios"
 
-const myAxios = axios.create({
+const shopAxios = axios.create({
 	baseURL: "https://fakestoreapi.com"
 })
 
-export default myAxios
+export default shopAxios
