@@ -1,12 +1,12 @@
 import styles from "./ShopPage.module.scss"
 import { useEffect, useState } from "react"
 
-import ShopProductList from "../../modules/ShopPruductList/ShopProductList"
+import ShopProducts from "../../modules/ShopPruducts/ShopProducts"
 
 const ShopPage = () => {
   return (
     <div className={styles.shop}>
-      <ShopProductList />
+      <ShopProducts />
     </div>
   )
 }

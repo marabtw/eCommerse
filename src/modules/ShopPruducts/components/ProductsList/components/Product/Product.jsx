@@ -1,5 +1,5 @@
 import styles from "./Product.module.scss"
-import Button from '../../../../ui/Button/Button'
+import Button from '../../../../../../ui/Button/Button'
 
 const Product = ({product}) => {
 	return (

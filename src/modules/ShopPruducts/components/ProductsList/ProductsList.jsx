@@ -1,12 +1,11 @@
-import styles from "./ShopProductList.module.scss"
+import styles from "./ProductsList.module.scss"
 import { useEffect, useState } from "react"
-import { getProducts } from "../../api/shop"
-import SectionHeading from "../../ui/heading/SectionHeading"
-import Button from "../../ui/Button/Button"
+import { getProducts } from "./api/index"
+import Button from "../../../../ui/Button/Button"
 import Product from "./components/Product/Product"
 
-const ShopProductList = () => {
-	const [producs, setProducts] = useState([])
+const ProductsList = () => {
+  const [producs, setProducts] = useState([])
   const [visibleProducts, setVisibleProduct] = useState({
     start: 0,
     end: 8,
@@ -31,7 +30,6 @@ const ShopProductList = () => {
 
   return (
     <div className={styles.products}>
-      <SectionHeading text={"latest products"} uppercase={true} />
       <div className={styles.products__list}>
         {producs &&
           producs
@@ -56,4 +54,4 @@ const ShopProductList = () => {
   )
 }
 
-export default ShopProductList
+export default ProductsList

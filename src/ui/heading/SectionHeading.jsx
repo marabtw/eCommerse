@@ -1,7 +1,7 @@
-import React from "react"
+import styles from './Heading.module.scss'
 
 function SectionHeading({ text,uppercase }) {
-  return <h2 className={`${uppercase && "uppercase"}`}>{text}</h2>
+  return <h2 className={`${styles.section__heading} ${uppercase && "uppercase"}`}>{text}</h2>
 }
 
 export default SectionHeading

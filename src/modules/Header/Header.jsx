@@ -48,14 +48,14 @@ const Header = () => {
             {!authed ? (
               <Link to="/login">
                 <UserIcon className={styles.header__icon} />
-                <span>Login</span>
+                <p>Login</p>
               </Link>
             ) : (
               <div></div>
             )}
           </div>
           <CartIcon className={styles.header__icon} />
-          <SearchIcon className={styles.header__icon} />
+          {/* <SearchIcon className={styles.header__icon} /> */}
         </li>
       </ul>
     </header>
