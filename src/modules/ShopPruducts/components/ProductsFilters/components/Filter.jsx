@@ -1,5 +1,6 @@
 import styles from "./Filter.module.scss"
 import CheckboxLabel from "../../../../../components/CheckboxLabel/CheckboxLabel"
+import DoubleRangeSlider from "../../../../../components/DoubleRangeSlider/DoubleRangeSlider"
 
 const Filter = ({ filter }) => {
   return (
@@ -11,7 +12,7 @@ const Filter = ({ filter }) => {
             <CheckboxLabel key={index} name={item} />
           ))
         ) : (
-          <div></div>
+          <DoubleRangeSlider rangeValues={{min:0,max:120}} defaultValues={{value1: 40, value2: 90}}/>
         )}
       </div>
     </div>

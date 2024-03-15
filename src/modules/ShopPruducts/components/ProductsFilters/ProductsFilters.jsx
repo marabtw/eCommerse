@@ -3,6 +3,7 @@ import styles from "./ProductsFilters.module.scss"
 import { getCategories } from "./api"
 import { useEffect } from "react"
 import Filter from "./components/Filter"
+import Button from "../../../../ui/Button/Button"
 
 const ProductsFilter = () => {
   const [categories, setCategories] = useState([])
@@ -70,6 +71,9 @@ const ProductsFilter = () => {
       {filters.map((filter) => (
         <Filter key={`filter ${filter.title}`} filter={filter} />
       ))}
+      <div className={styles.button}>
+        <Button color="red" text="Применить" />
+      </div>
     </div>
   )
 }

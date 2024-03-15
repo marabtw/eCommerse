@@ -21,7 +21,10 @@
     width: 0;
     &:checked ~ .checkmark {
       background-color: #2196f3;
-			border-color: #2196f3;
+      border-color: #2196f3;
+    }
+    &:not(:checked):hover ~ .checkmark {
+      background-color: #ccc;
     }
   }
   .checkmark {
@@ -31,12 +34,8 @@
     transform: translateY(-50%);
     height: 15px;
     width: 15px;
-		border: 1px solid black;
-		border-radius: 4px;
-		transition: background .05s ease-in, border-color .1s ease-in;
-  }
-
-  &:hover input ~ .checkmark {
-    background-color: #ccc;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: background 0.05s ease-in, border-color 0.1s ease-in;
   }
 }
